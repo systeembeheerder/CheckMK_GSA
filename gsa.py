@@ -30,7 +30,7 @@ try:
         crit_results = gmp.get_results (filter_string='created>-1w and severity>=9 min_qod=70 apply_overrides=1 first=1 rows=1000')
         crit_count = int(crit_results.xpath('result_count/filtered/text()')[0])
 
-        print(f"P \"Greenbone Security Assistant results\" medium={medium_count}|high={high_count},1|ciritcal={crit_count},1,1 ")
+        print(f"P \"Greenbone Security Assistant results\" medium={medium_count}|high={high_count};1|ciritcal={crit_count};1;1 ")
 
 
 
